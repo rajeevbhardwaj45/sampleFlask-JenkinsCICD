@@ -1,7 +1,8 @@
-from flask import Flask, redirect, url_for, request, render_template, send_file
+from flask import Flask, url_for, request, render_template, send_file
 import time
 from flask import send_from_directory
 import os
+from werkzeug.utils import redirect
 
 app = Flask(__name__)
 
@@ -40,4 +41,4 @@ def get_specifications():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0')
