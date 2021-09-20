@@ -1,6 +1,6 @@
 node {
   stage 'Checkout'
-  git url: 'https://github.com/rajeevbhardwaj45/sampleFlask-JenkinsCICD'
+  git url: 'https://github.com/rajeevbhardwaj45/sampleFlask-JenkinsCICD.git'
 
   stage 'Give permission'
   sh "chmod +x -R ./deploy.sh"
