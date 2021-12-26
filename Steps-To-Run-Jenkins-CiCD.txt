@@ -1,0 +1,22 @@
+Move to path where dockerfile is
+
+docker build -t jenkins-image .
+
+docker run -dit --name jenkins-container -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 -u root jenkins-image
+
+docker exec -it jenkins-container /bin/bash
+
+cat /var/jenkins_home/secrets/initialAdminPassword
+
+user name : rajeevbhardwaj
+
+Docker Plugins install in Jenkins
+
+Create Project on GitHUb
+
+Create Pipeline JOb in Jenkins
+
+
+--Manual - Not required
+docker exec -it flask-container /bin/bash
+python -m flask run --host=0.0.0.0 - Manual Run
